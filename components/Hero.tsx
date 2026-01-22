@@ -61,13 +61,17 @@ const Hero: React.FC = () => {
 
         <div className="relative hidden lg:block">
           <div className="relative z-10 animate-float">
-            <img 
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800" 
-              alt="Tech Device" 
-              className="rounded-3xl border border-white/10 shadow-2xl shadow-blue-500/20"
-            />
+            <div className="relative group">
+              {/* Added a glow effect behind the image */}
+              <div className="absolute inset-0 bg-blue-500/20 blur-3xl rounded-full scale-75 transition-all group-hover:scale-90"></div>
+              <img 
+                src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=1200&auto=format&fit=crop" 
+                alt="Smartphone Professional Repair" 
+                className="relative rounded-3xl border border-white/10 shadow-2xl shadow-blue-500/20 object-cover w-full h-[500px]"
+              />
+            </div>
             {/* Overlay UI element */}
-            <div className="absolute -bottom-10 -right-10 glass p-6 rounded-2xl border border-emerald-500/30 animate-pulse">
+            <div className="absolute -bottom-10 -right-10 glass p-6 rounded-2xl border border-emerald-500/30 animate-pulse z-20">
               <div className="flex items-center gap-3 mb-2">
                 <div className="w-3 h-3 bg-emerald-500 rounded-full"></div>
                 <span className="text-sm font-bold">{lang === 'ar' ? 'صيانة فورية' : 'Express Repair'}</span>

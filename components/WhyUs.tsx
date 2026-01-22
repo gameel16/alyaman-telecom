@@ -38,11 +38,16 @@ const WhyUs: React.FC = () => {
           <div className="relative">
             <div className="rounded-3xl overflow-hidden shadow-2xl shadow-blue-500/10 border border-white/5 group">
               <img 
-                src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800" 
-                alt="Cyber Technology" 
-                className="w-full h-auto transition-transform duration-700 group-hover:scale-105"
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop" 
+                alt="Advanced Electronic Circuits" 
+                className="w-full h-[550px] object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+              {/* Floating Tech Badge */}
+              <div className="absolute top-6 left-6 glass px-4 py-2 rounded-lg border border-white/10 flex items-center gap-2">
+                <div className="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></div>
+                <span className="text-xs font-tech font-bold text-white uppercase tracking-tighter">Tech-Systems v2.0</span>
+              </div>
             </div>
           </div>
         </div>
